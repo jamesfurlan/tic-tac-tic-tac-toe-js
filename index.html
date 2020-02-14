@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic-tac-tic-tac-toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+
+<body>
+    <div class="game" id="game">
+        <div class="board" id="board">
+            <div class="cols">
+                <div class="col">
+                    <div class="local box00" id="outer00">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner0000"></div>
+                                <div class="grid box10" id="inner0010"></div>
+                                <div class="grid box20" id="inner0020"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner0001"></div>
+                                <div class="grid box11" id="inner0011"></div>
+                                <div class="grid box21" id="inner0021"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner0002"></div>
+                                <div class="grid box12" id="inner0012"></div>
+                                <div class="grid box22" id="inner0022"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo00"></div>
+                    </div>
+                    <div class="local box10" id="outer10">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner1000"></div>
+                                <div class="grid box10" id="inner1010"></div>
+                                <div class="grid box20" id="inner1020"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner1001"></div>
+                                <div class="grid box11" id="inner1011"></div>
+                                <div class="grid box21" id="inner1021"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner1002"></div>
+                                <div class="grid box12" id="inner1012"></div>
+                                <div class="grid box22" id="inner1022"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo10"></div>
+                    </div>
+                    <div class="local box20" id="outer20">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner2000"></div>
+                                <div class="grid box10" id="inner2010"></div>
+                                <div class="grid box20" id="inner2020"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner2001"></div>
+                                <div class="grid box11" id="inner2011"></div>
+                                <div class="grid box21" id="inner2021"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner2002"></div>
+                                <div class="grid box12" id="inner2012"></div>
+                                <div class="grid box22" id="inner2022"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo20"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="local box01" id="outer01">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner0100"></div>
+                                <div class="grid box10" id="inner0110"></div>
+                                <div class="grid box20" id="inner0120"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner0101"></div>
+                                <div class="grid box11" id="inner0111"></div>
+                                <div class="grid box21" id="inner0121"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner0102"></div>
+                                <div class="grid box12" id="inner0112"></div>
+                                <div class="grid box22" id="inner0122"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo01"></div>
+                    </div>
+                    <div class="local box11" id="outer11">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner1100"></div>
+                                <div class="grid box10" id="inner1110"></div>
+                                <div class="grid box20" id="inner1120"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner1101"></div>
+                                <div class="grid box11" id="inner1111"></div>
+                                <div class="grid box21" id="inner1121"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner1102"></div>
+                                <div class="grid box12" id="inner1112"></div>
+                                <div class="grid box22" id="inner1122"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo11"></div>
+                    </div>
+                    <div class="local box21" id="outer21">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner2100"></div>
+                                <div class="grid box10" id="inner2110"></div>
+                                <div class="grid box20" id="inner2120"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner2101"></div>
+                                <div class="grid box11" id="inner2111"></div>
+                                <div class="grid box21" id="inner2121"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner2102"></div>
+                                <div class="grid box12" id="inner2112"></div>
+                                <div class="grid box22" id="inner2122"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo21"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="local box02" id="outer02">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner0200"></div>
+                                <div class="grid box10" id="inner0210"></div>
+                                <div class="grid box20" id="inner0220"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner0201"></div>
+                                <div class="grid box11" id="inner0211"></div>
+                                <div class="grid box21" id="inner0221"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner0202"></div>
+                                <div class="grid box12" id="inner0212"></div>
+                                <div class="grid box22" id="inner0222"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo02"></div>
+                    </div>
+                    <div class="local box12" id="outer12">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner1200"></div>
+                                <div class="grid box10" id="inner1210"></div>
+                                <div class="grid box20" id="inner1220"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner1201"></div>
+                                <div class="grid box11" id="inner1211"></div>
+                                <div class="grid box21" id="inner1221"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner1202"></div>
+                                <div class="grid box12" id="inner1212"></div>
+                                <div class="grid box22" id="inner1222"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo12"></div>
+                    </div>
+                    <div class="local box22" id="outer22">
+                        <div class="subcols">
+                            <div class="subcol">
+                                <div class="grid box00" id="inner2200"></div>
+                                <div class="grid box10" id="inner2210"></div>
+                                <div class="grid box20" id="inner2220"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box01" id="inner2201"></div>
+                                <div class="grid box11" id="inner2211"></div>
+                                <div class="grid box21" id="inner2221"></div>
+                            </div>
+                            <div class="subcol">
+                                <div class="grid box02" id="inner2202"></div>
+                                <div class="grid box12" id="inner2212"></div>
+                                <div class="grid box22" id="inner2222"></div>
+                            </div>
+                        </div>
+                        <div class="localInfo" id="localInfo22"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="win-box" id="winnerDiv">
+        <h1 class="win-content container" id="winnerContainer">
+        </h1>
+    </div>
+    
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
